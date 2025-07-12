@@ -1,0 +1,150 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 400px;
+  padding: 5%;
+  color: white;
+}
+
+.event-card .title,
+.event-card .desc {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}
+
+.event-card.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.event-card .title {
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.event-card .desc {
+  margin: 0;
+  font-size: 1.4rem;
+  width: 50%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+}
+.flex-card .title,
+.flex-card .desc {
+  margin: 0;
+  padding: 0;
+}
+.flex-card .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.flex-card .desc {
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.grid-thumbnail {
+  border-radius: 15px;
+  height: 300px;
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .event-card {
+    height: 350px;
+  }
+  .event-card .title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .event-card .desc {
+    font-size: 1.2rem;
+  }
+  .flex-card .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .flex-card .desc {
+    font-size: 1rem;
+  }
+  .grid-thumbnail {
+    height: 300px;
+  }
+}
+@media (min-width: 591px) and (max-width: 899px) {
+  .event-card {
+    height: 250px;
+  }
+  .event-card .title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .event-card .desc {
+    font-size: 0.9rem;
+  }
+  .flex-card .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .flex-card .desc {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 590px) {
+  .event-card {
+    height: 150px;
+    overflow-y: auto;
+  }
+  .event-card .title {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+  }
+  .event-card .desc {
+    font-size: 0.6rem;
+  }
+  .flex-card .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .flex-card .desc {
+    font-size: 0.8rem;
+  }
+  .grid-thumbnail {
+    height: 200px;
+  }
+}
+@media (max-width: 479px) {
+  .event-card {
+    height: 150px;
+    overflow-y: auto;
+  }
+  .event-card .title {
+    font-size: 1rem;
+    margin-bottom: 7px;
+  }
+  .event-card .desc {
+    font-size: 0.55rem;
+  }
+  .flex-card .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .flex-card .desc {
+    font-size: 0.8rem;
+  }
+  .grid-thumbnail {
+    height: 150px;
+  }
+}

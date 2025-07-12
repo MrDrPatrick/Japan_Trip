@@ -1,0 +1,217 @@
+.topper {
+  margin: 5% 5% 2% 5%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(220, 231, 243);
+  border-radius: 15px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page-title {
+  font-size: 4rem;
+}
+.page-subtitle {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.event-card-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: rgb(238, 244, 250);
+  padding: 2%;
+}
+.event-card-container > h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.special-livestream {
+  position: relative;
+  background-color: rgb(220, 231, 243);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  padding: 2%;
+  padding-bottom: 56.25%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special-livestream > h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.stream {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  width: 96%;
+  height: 88%;
+  border: 0;
+}
+
+.optional-container {
+  background-color: rgb(220, 231, 243);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+.grid-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page-title {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 5rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page-subtitle {
+  margin: 0 0 40px 0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    height: 600px;
+  }
+  .grid-title {
+    font-size: 2rem;
+    margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 591px) and (max-width: 899px) {
+  .event-card-container > h3 {
+    font-size: 1.5rem;
+  }
+  .grid-title {
+    font-size: 2rem;
+  }
+  .page-title {
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+  }
+  .page-subtitle {
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+  }
+  .grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    height: 550px;
+  }
+  .grid-title {
+    font-size: 2rem;
+    margin: 0 0 25px 0;
+  }
+
+  .stream {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 96%;
+    height: 82%;
+  }
+}
+@media (min-width: 480px) and (max-width: 590px) {
+  .event-card-container > h3 {
+    font-size: 1.5rem;
+  }
+  .grid-title {
+    font-size: 2rem;
+  }
+  .page-title {
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+  }
+  .page-subtitle {
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+  }
+  .grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    height: 500px;
+  }
+  .grid-title {
+    font-size: 2rem;
+    margin: 0 0 25px 0;
+  }
+
+  .stream {
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    width: 96%;
+    height: 80%;
+  }
+}
+@media (max-width: 479px) {
+  .event-card-container > h3 {
+    font-size: 1.5rem;
+  }
+  .grid-title {
+    font-size: 2rem;
+  }
+  .page-title {
+    margin: 0 0 10px 0;
+    font-size: 3rem;
+  }
+  .page-subtitle {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+  }
+  .grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    height: 450px;
+  }
+  .grid-title {
+    font-size: 2rem;
+    margin: 0 0 25px 0;
+  }
+  .stream {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    width: 96%;
+    height: 78%;
+  }
+}
